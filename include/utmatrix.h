@@ -192,7 +192,7 @@ ValType TVector<ValType>::operator*(const TVector<ValType> &v)
 	ValType scal = 0;
 	for (int i = 0; i < Size; i++)
 		scal+= pVector[i] * v.pVector[i];
-	return sca;
+	return scal;
 } /*-------------------------------------------------------------------------*/
 
 // Верхнетреугольная матрица
