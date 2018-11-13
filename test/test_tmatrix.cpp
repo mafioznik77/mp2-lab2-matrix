@@ -1,7 +1,7 @@
 #include "utmatrix.h"
 
 #include <gtest.h>
-
+// КОММЕНТАРИЙ ДЛЯ ФИКСА КОНФЛИКТА МЕЖДУ MASTER and TEST
 TEST(TMatrix, can_create_matrix_with_positive_length)
 {
 	ASSERT_NO_THROW(TMatrix<int> m(5));
@@ -140,7 +140,7 @@ TEST(TMatrix, matrices_with_different_size_are_not_equal)
 	EXPECT_EQ(0, a == b);
 }
 
-TEST(TMatrix, can_add_matrices_with_equal_size)   /// фикс оператор + и -
+TEST(TMatrix, can_add_matrices_with_equal_size)   /// фикс оператор + и -/
 {
 	const int n = 10;
 	TMatrix<int> a(n), b(n), c(n);
@@ -164,7 +164,7 @@ TEST(TMatrix, cant_add_matrices_with_not_equal_size)
 	EXPECT_ANY_THROW(a + b);
 }
 
-TEST(TMatrix, can_subtract_matrices_with_equal_size) /// фикс оператор + и -
+TEST(TMatrix, can_subtract_matrices_with_equal_size) /// фикс оператор + и -/
 {
 	const int n = 3;
 	TMatrix<int> a(n), b(n), c(n);

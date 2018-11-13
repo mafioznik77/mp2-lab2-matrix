@@ -1,7 +1,7 @@
 #include "utmatrix.h"
 
 #include <gtest.h>
-
+//  ŒÃÃ≈Õ“¿–»… ƒÀﬂ ‘» —¿  ŒÕ‘À» “¿ Ã≈∆ƒ” MASTER and TEST
 TEST(TVector, can_create_vector_with_positive_length)
 {
 	ASSERT_NO_THROW(TVector<int> v(5));
@@ -39,7 +39,7 @@ TEST(TVector, copied_vector_is_equal_to_source_one)
 	EXPECT_EQ(a, b);
 }
 
-TEST(TVector, copied_vector_has_its_own_memory)
+TEST(TVector, copied_vector_has_its_own_memory) //
 {
 	TVector<int> b;
 	TVector<int> *a = new TVector<int>;
