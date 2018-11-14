@@ -179,9 +179,8 @@ TEST(TMatrix, can_subtract_matrices_with_equal_size)
 	}
 	cout << a << endl << b << endl << c << endl;
 	EXPECT_NO_THROW(a - b);
-	bool flag = 0;
-	flag = c == a - b;
-	EXPECT_EQ(flag, true);
+
+	EXPECT_EQ(c,a-b);
 
 }
 

@@ -230,7 +230,7 @@ TEST(TVector, can_multiply_vectors_with_equal_size)
 		b[i] = i * 10;
 		c += (i+3)*(i*10);
 	}
-	EXPECT_NO_THROW(a + b);
+	EXPECT_NO_THROW(a * b);
 	EXPECT_EQ(c, a * b);
 }
 
