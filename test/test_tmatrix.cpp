@@ -177,9 +177,7 @@ TEST(TMatrix, can_subtract_matrices_with_equal_size)
 			c[i][j] = 3 * j - 2 * i;
 		}
 	}
-	cout << a << endl << b << endl << c << endl;
 	EXPECT_NO_THROW(a - b);
-
 	EXPECT_EQ(c,a-b);
 
 }
