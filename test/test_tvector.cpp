@@ -242,4 +242,3 @@ TEST(TVector, cant_multiply_vectors_with_not_equal_size)
 	b[0] = 2;
 	EXPECT_ANY_THROW(a * b);
 }
-

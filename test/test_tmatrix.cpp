@@ -190,4 +190,3 @@ TEST(TMatrix, cant_subtract_matrixes_with_not_equal_size)
 	TMatrix<int> a(2), b(3);
 	EXPECT_ANY_THROW(a - b);
 }
-
